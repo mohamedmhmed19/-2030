@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Bahij TheSansArabic-Black";
+    src: url("../fonts/Bahij_TheSansArabic-Black.eot?") format("eot"),url("../fonts/Bahij_TheSansArabic-Black.woff") format("woff"),url("../fonts/Bahij_TheSansArabic-Black.ttf") format("truetype"),url("../fonts/Bahij_TheSansArabic-Black.svg#BahijTheSansArabic-Black") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Bahij TheSansArabic-Black";
+}
+
+body {
+    background-image: url('mircea-muntean-BNjGLdl2-c0-unsplash.jpg'); background-position:center center;
+}
+
+.bgimg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Bahij TheSansArabic-Black", "Courier New", Courier, monospace;
+}
+
+    .bgimg::after {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.topright {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    .middle h1 {
+        font-size: 50px;
+    }
+
+    .middle p {
+        color: #FFF;
+        font-size: 38px;
+    }
+
+hr {
+    margin: auto;
+    width: 40%;
+}
